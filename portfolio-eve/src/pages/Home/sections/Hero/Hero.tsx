@@ -1,4 +1,5 @@
 import { styled } from "@mui/material"
+import { Grid } from "@mui/material"
 import Avatar from "../../../../assets/images/avatar.jpg"
 
 const Hero = () => {
@@ -13,9 +14,18 @@ const Hero = () => {
 
     return (
         <>
-            <StyledHero>Ola
+            <StyledHero>
+                <Grid container spacing={2}>
+                    <Grid size={4}>
 
-                <StyledImage src={Avatar} />
+                        <StyledImage src={Avatar} />
+                    </Grid>
+                    <Grid size={8}>
+                        size=4
+                    </Grid>
+                </Grid>
+
+
 
             </StyledHero>
         </>
